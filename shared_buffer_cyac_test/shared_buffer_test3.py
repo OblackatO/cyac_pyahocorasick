@@ -6,7 +6,6 @@ from memory_profiler import profile
 
 
 ac_patterns = ["python", "ruby"]
-ac_patterns = ["python", "ruby"]
 patterns_dict = json.loads(open("static_ioc_sample.json", "r").read())
 total_patterns = 0
 for x in range(0,1000):
