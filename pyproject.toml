@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bench_mark_env"
+version = "0.1.0"
+description = ""
+authors = ["Pedro <pegom0896@zoho.eu>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cython = "*"
+pyahocorasick = "*"
+cyac = "*"
+numpy = "*"
+matplotlib = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,8 @@
+Evidence that we cannot release GIL with Kafka python: https://github.com/confluentinc/confluent-kafka-python/issues/597
+	- Numba requires no python objects only C code. Clearly, in the last post of this issue we can see
+	that Py objects are created and destroied.
+	Numba clearly states the above here: https://numba.pydata.org/numba-doc/dev/user/jit.html#nogil
+	
+Check RSS memory with ps, example: 
+	- ps -p 93558 -o pcpu,rss,pid,command (output was 48MBytes for c_version_multithread.py script)
+
